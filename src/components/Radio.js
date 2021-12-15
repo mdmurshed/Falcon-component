@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes, { object } from 'prop-types';
 
-export const Radio = ({ horizontal, options, defaultCheck, getResult }) => {
+const Radio = ({ horizontal, options, defaultCheck, getResult }) => {
   const func = obj => 'active' in obj;
 
   return (
@@ -53,3 +53,4 @@ Radio.propTypes = {
   defaultCheck: PropTypes.string,
   getResult: PropTypes.func.isRequired
 };
+export default Radio;

@@ -10,18 +10,18 @@ export default [
     output: [
       {
         file: 'dist/index.js',
-        format: 'cjs',
+        format: 'cjs'
       },
       {
         file: 'dist/index.es.js',
         format: 'es',
-        exports: 'named',
+        exports: 'named'
       }
     ],
     plugins: [
       postcss({
         plugins: [],
-        minimize: true,
+        minimize: true
       }),
       babel({
         exclude: 'node_modules/**',
@@ -29,7 +29,7 @@ export default [
       }),
       external(),
       resolve(),
-      terser(),
+      terser()
     ]
   }
 ];
